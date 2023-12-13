@@ -1,3 +1,4 @@
+import { buildDevServer } from "./buildDevServer";
 import { buildLoaders } from "./buildLoaders";
 import { buildPlugins } from "./buildPlugins";
 import { buildResolwe } from "./buildResolwe";
@@ -7,15 +8,15 @@ import webpack from 'webpack'
 
 
 export function buildWebpaqckConfig(option: BuildOptions): webpack.Configuration {
-    
-    const {paths,mode } = option;
+
+    const { paths, mode,isDev } = option;
 
     return {
         mode: mode,
-        entry:paths.entry,
+        entry: paths.entry,
         output: {
             filename: "[name].js",
-            path:paths.build,
+            path: paths.build,
             clean: true,
 
         },
@@ -24,6 +25,7 @@ export function buildWebpaqckConfig(option: BuildOptions): webpack.Configuration
             rules: buildLoaders()
         },
         resolve: buildResolwe(),
-
+        devtool: isDev ? 'inline-source-map' : undefined,
+        devServer:isDev ?buildDevServer(option) : undefined
     }
 }

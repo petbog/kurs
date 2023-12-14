@@ -1,19 +1,22 @@
 import './index.scss'
 import { Route, Routes } from 'react-router-dom'
 import { Link } from "react-router-dom"
-import AboutPage from 'src/Pages/aboutPage/AboutPage'
-import MainPage from 'src/Pages/mainPage/MainPage'
+import AboutPage from '../Pages/aboutPage/AboutPage'
+import { Suspense } from 'react'
+import { MainPageAsync } from '../Pages/mainPage/MainPage.async'
+import { AboutPageAsync } from '../Pages/aboutPage/AboutPage.async'
 
 const App = () => {
     return (
         <div className="App">
-            <Link to={'/about'}>Главная</Link>
-            <Link to={'/main'}>о нас</Link>
+            <Link to={'/'}>Главная</Link><br/>
+            <Link to={'/about'}>о нас</Link>
+            <Suspense fallback={<div>Loading...</div>}>
             <Routes>
-                <Route path={"/about"} element={<AboutPage />}/>
-                <Route path={"/main"} element={<MainPage />}/>
+                <Route path={"/"} element={<MainPageAsync />}/>
+                <Route path={"/about"} element={<AboutPageAsync />}/>
             </Routes>
-            
+            </Suspense>
         </div>
     )
 }

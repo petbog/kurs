@@ -2,10 +2,11 @@ import './styles/index.scss'
 import { Route, Routes } from 'react-router-dom'
 import { Link } from "react-router-dom"
 import { Suspense} from 'react'
-import { MainPageAsync } from './Pages/mainPage/MainPage.async'
-import { AboutPageAsync } from './Pages/aboutPage/AboutPage.async'
-import { useTheme } from './styles/theme/useTheme'
-import { classNames } from './helpers/classNames/classNames'
+import { useTheme } from './provider/ThemeProvider/lib/useTheme'
+import { classNames } from '../helpers/classNames/classNames'
+import { AboutPageAsync } from '../Pages/aboutPage/AboutPage.async'
+import { MainPageAsync } from '../Pages/mainPage/MainPage.async'
+
 
 
 export enum Theme {

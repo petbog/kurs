@@ -1,5 +1,3 @@
-import { AboutPageAsync } from "Pages/aboutPage/AboutPage.async"
-import { MainPageAsync } from "Pages/mainPage/MainPage.async"
 import { routeConfig } from "app/shered/config/routeConfig/routeConfig"
 import { Suspense } from "react"
 import { Route, Routes } from "react-router-dom"

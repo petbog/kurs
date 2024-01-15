@@ -1,0 +1,23 @@
+.Sidebar{
+    // height: calc(100vh - var(--navbar-heigth));
+    height: 94.5vh;
+    // width: var(--sidebar-width);
+    width: 300px;
+    background:var(--inverted-bg-color) ;
+
+
+    position: relative;
+    transition: width 0.5s;
+}
+.collapsed{
+    // width: var(--sidebar-width-collapsed);
+    width: 80px;
+}
+
+.swithers{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

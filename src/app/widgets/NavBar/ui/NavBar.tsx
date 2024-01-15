@@ -13,7 +13,6 @@ interface NavbarProps {
 export const NavBar = ({ className }: NavbarProps) => {
     return (
         <div className={classNames(k.navbar,{},[className])}>
-            <ThemeSwithers />
             <AppLink theme={AppLinkTheme.SECONDARY} to={'/'}>Главная</AppLink><br />
             <AppLink  to={'/about'}>о нас</AppLink>
         </div>

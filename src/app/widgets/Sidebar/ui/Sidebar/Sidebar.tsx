@@ -1,7 +1,8 @@
-import slc from './Sidebar.module.scss'
+import cls from './Sidebar.module.scss'
 import { classNames } from './../../../../../helpers/classNames/classNames';
 import { useState } from 'react';
 import { ThemeSwithers } from 'app/widgets/ThemeSwithers';
+import { LangSwitcher } from 'app/shered/ui/LangSwitcher/LangSwitcher';
 
 
 
@@ -17,10 +18,11 @@ export const Sidebar = ({ className }: SidebarProps) => {
         setCollapsed(prev => !prev)
     }
     return (
-        <div className={classNames(slc.Sidebar, { [slc.collapsed]: collapsed }, [className])}>
+        <div className={classNames(cls.Sidebar, { [cls.collapsed]: collapsed }, [className])}>
             <button onClick={onToggle}>Toggle</button>
-            <div className={slc.swithers}>
-                <ThemeSwithers />
+            <div className={cls.swithers}>
+                <ThemeSwithers className={cls.themeButton} />
+                <LangSwitcher className={cls.lang}/>
             </div>
         </div>
     )

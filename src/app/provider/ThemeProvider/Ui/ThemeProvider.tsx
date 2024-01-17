@@ -1,6 +1,6 @@
 import { FC, useMemo, useState } from 'react'
 import { LOCAL_STORAGE_THEME_KEY, Theme, themeContext } from '../lib/themeContext'
-
+import React from 'react'
 
 
 const defaultTheme = localStorage.getItem(LOCAL_STORAGE_THEME_KEY) as Theme || Theme.Ligth

@@ -1,8 +1,6 @@
-import { Link } from 'react-router-dom'
 import k from './NavBar.module.scss'
 import { classNames } from 'helpers/classNames/classNames'
 import { AppLink, AppLinkTheme } from 'app/shered/ui/AppLink/AppLink'
-import { ThemeSwithers } from 'app/widgets/ThemeSwithers'
 
 
 

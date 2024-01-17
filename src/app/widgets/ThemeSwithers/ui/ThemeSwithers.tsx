@@ -5,6 +5,7 @@ import DarlLigth from '../../../shered/assets/icons/theme-dark.svg'
 import { Theme } from "app/provider/ThemeProvider/lib/themeContext"
 import { Button, ThemeButton } from "app/shered/ui/Button/Button"
 import cls from './ThemeSwithers.module.scss'
+import React from 'react';
 
 
 type ThemeSwitherProProps = {

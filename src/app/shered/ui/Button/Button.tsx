@@ -1,6 +1,6 @@
 import { classNames } from "helpers/classNames/classNames"
 import { ButtonHTMLAttributes, FC } from "react"
-
+import React from "react";
 
 export enum ThemeButton {
     CLEAR = 'clear',

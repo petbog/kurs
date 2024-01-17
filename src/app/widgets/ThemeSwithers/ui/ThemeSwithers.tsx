@@ -4,6 +4,7 @@ import LigthTheme from '../../../shered/assets/icons/theme-light.svg'
 import DarlLigth from '../../../shered/assets/icons/theme-dark.svg'
 import { Theme } from "app/provider/ThemeProvider/lib/themeContext"
 import { Button, ThemeButton } from "app/shered/ui/Button/Button"
+import cls from './ThemeSwithers.module.scss'
 
 
 type ThemeSwitherProProps = {
@@ -19,7 +20,7 @@ export const ThemeSwithers = ({ className }: ThemeSwitherProProps) => {
 
         <Button
             theme={ThemeButton.CLEAR}
-            className={classNames('ThemeSwitcher', {}, [className])}
+            className={classNames(cls.ThemeSwitcher, {}, [className])}
             onClick={toggleTheme}>
             {theme === Theme.Ligth ? <LigthTheme /> : <DarlLigth />}
         </Button>

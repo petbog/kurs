@@ -1,13 +1,14 @@
-.navbar{
+.navbar {
     width: 100%;
     height: 50px;
     background: var(--inverted-bg-color);
     display: flex;
     align-items: center;
-    padding: 5px 5px;
+    padding: 5px;
     text-decoration: none;
 }
-.navbar__item{
-    margin:  15px 15px;
+
+.navbar__item {
+    margin: 15px;
     text-decoration: none;
 }

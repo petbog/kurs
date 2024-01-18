@@ -1,34 +1,31 @@
-.Sidebar{
-    // height: calc(100vh - var(--navbar-heigth));
+.Sidebar {
     height: 94.5vh;
-    // width: var(--sidebar-width);
     width: 300px;
-    background:var(--inverted-bg-color) ;
-
-
+    background: var(--inverted-bg-color);
     position: relative;
     transition: width 0.5s;
 }
-.collapsed{
-    // width: var(--sidebar-width-collapsed);
+
+.collapsed {
     width: 80px;
 }
 
-.swithers{
+.swithers {
     position: absolute;
     bottom: 20px;
     display: flex;
     justify-content: center;
     width: 100%;
     flex-direction: column-reverse;
-
 }
-.lang{
+
+.lang {
     margin-left: 10px;
     border: none;
     cursor: pointer;
 }
-.themeButton{
+
+.themeButton {
     border: none;
     margin-top: 20px;
 }

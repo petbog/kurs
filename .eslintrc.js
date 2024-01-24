@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "eslint:recommended",
@@ -37,7 +38,8 @@ module.exports = {
         "react/jsx-indent": [2, 4],
         "indent": [2, 4],
         "no-shadow": "off",
-        "i18next/no-literal-string": ['error',{markupOnly:true}]
+        "i18next/no-literal-string": ['error', { markupOnly: true }],
+        "max-len": [0, { ignoreComments: true }]
     }
 }
 

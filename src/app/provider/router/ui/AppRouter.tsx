@@ -1,13 +1,15 @@
 import { routeConfig } from "app/shered/config/routeConfig/routeConfig"
+import { PageLoader } from "app/shered/ui/pageLoader/pageLoader"
 import { Suspense } from "react"
 import { Route, Routes } from "react-router-dom"
-import { useTranslation } from "react-i18next"
+
+
 
 
 const AppRouter = () => {
-    const{t}=useTranslation()
+    // const { t } = useTranslation('AppRouter')
     return (
-        <Suspense fallback={<div>{t("Loading...")}</div>}>
+        <Suspense fallback={PageLoader}>
             <Routes>
                 {Object.values(routeConfig).map(({ element, path }) => (
                     <Route

@@ -5,7 +5,6 @@ import { AppRouter } from './provider/router'
 import { NavBar } from './widgets/NavBar'
 import { Sidebar } from './widgets/Sidebar'
 import { Suspense } from 'react'
-import React from 'react';
 
 
 export enum Theme {

@@ -16,7 +16,9 @@ export enum Theme {
 
 const App = () => {
     const { theme } = useTheme()
-    // `App ${theme}`
+
+
+
     return (
         <div className={classNames('App', {}, [theme])}>
             <Suspense fallback='' >

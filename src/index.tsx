@@ -7,6 +7,7 @@ import "app/shered/config/i18n/i18n";
 import React from 'react';
 import { ErrorBoundary } from "app/provider/errorBaunderi";
 
+
 render(
     <BrowserRouter>
         <ErrorBoundary>

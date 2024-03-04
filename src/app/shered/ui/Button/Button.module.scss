@@ -9,3 +9,42 @@
     background: none;
     outline: none;
 }
+
+.background {
+    background: var(--inverted-bg-color);
+    color: var(--inverted-primary-color);
+    border: none;
+}
+
+.backgroundInverted {
+    background: var( --bg-color);
+    color: var( --secondary-color);
+    border: none;
+}
+.square{
+    padding: 0;
+}
+// .square.size_m{
+//     width: var(--font-m);
+//     height: var(--font-m);
+// }
+// .square.size_l{
+//     width: var(--font-l);
+//     height: var(--font-l);
+// }
+// .square.size_xl{
+//     width: var(--font-xl);
+//     height: var(--font-xl);
+// }
+.square.size_m{
+    width: 16px;
+    height: 24px;
+}
+.square.size_l{
+    width: 24px;
+    height: 32px;
+}
+.square.size_xl{
+    width: 40px;
+    height: 40px;
+}
